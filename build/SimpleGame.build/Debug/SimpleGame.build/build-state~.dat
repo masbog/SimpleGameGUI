@@ -1,0 +1,196 @@
+TSimpleGame
+v7
+r0
+t326278281.629282
+cCheck dependencies
+cProcessInfoPlistFile /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Info.plist SimpleGame-Info.plist
+cCopyStringsFile /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Volumes/DATA/XCode_Project/SimpleGame/English.lproj/MainMenu.xib
+cProcessPCH /var/folders/kK/kKKtxllFGeWAhTTifEDBo++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleGame_Prefix-drnmspretdlpqheqpyivrtywqyxy/SimpleGame_Prefix.pch.gch SimpleGame_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/main.o /Volumes/DATA/XCode_Project/SimpleGame/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/SimpleGameAppDelegate.o /Volumes/DATA/XCode_Project/SimpleGame/SimpleGameAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/MacOS/SimpleGame normal x86_64
+cTouch /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004CAA740B00000000000000EE
+t1286239243
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Volumes/DATA/XCode_Project/SimpleGame/English.lproj/InfoPlist.strings
+c000000004DC25ECA000000000000002D
+t1304583882
+s45
+
+N/Volumes/DATA/XCode_Project/SimpleGame/English.lproj/MainMenu.xib
+c000000004DC264EB000000000002FDED
+t1304585451
+s196077
+
+N/Volumes/DATA/XCode_Project/SimpleGame/SimpleGameAppDelegate.h
+c000000004DC25ECA0000000000000136
+t1304583882
+s310
+i<Cocoa/Cocoa.h>
+
+N/Volumes/DATA/XCode_Project/SimpleGame/SimpleGameAppDelegate.m
+c000000004DC25ECA000000000000016E
+t1304583882
+s366
+i"SimpleGameAppDelegate.h"
+
+N/Volumes/DATA/XCode_Project/SimpleGame/SimpleGame_Prefix.pch
+c000000004DC25ECA0000000000000097
+t1304583882
+s151
+i<Cocoa/Cocoa.h>
+
+N/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app
+t1304585481
+s102
+
+N/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Info.plist
+t1304585453
+s895
+
+N/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/MacOS/SimpleGame
+t1304585481
+s14568
+
+N/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/PkgInfo
+t1304585453
+s8
+
+N/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1304585454
+s92
+
+N/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Resources/English.lproj/MainMenu.nib
+t1304585454
+s37570
+
+N/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/SimpleGame.LinkFileList
+c000000004DC264ED00000000000000F5
+t1304585453
+s245
+
+N/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/SimpleGameAppDelegate.o
+t1304585480
+s21176
+
+N/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/main.o
+t1304585480
+s4992
+
+N/Volumes/DATA/XCode_Project/SimpleGame/main.m
+c000000004DC25ECA00000000000000F2
+t1304583882
+s242
+i<Cocoa/Cocoa.h>
+
+N/var/folders/kK/kKKtxllFGeWAhTTifEDBo++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleGame_Prefix-drnmspretdlpqheqpyivrtywqyxy/SimpleGame_Prefix.pch.gch
+t1304585479
+s54306576
+
+NSimpleGame-Info.plist
+c000000004DC25ECA00000000000003EA
+t1304583882
+s1002
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies326278253#326278253#0(0"0(0#1#0"8640110400#0"0#
+
+CCompileC build/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/SimpleGameAppDelegate.o /Volumes/DATA/XCode_Project/SimpleGame/SimpleGameAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s326278279.882063
+e326278280.742653
+r1
+xCompileC
+xbuild/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/SimpleGameAppDelegate.o
+x/Volumes/DATA/XCode_Project/SimpleGame/SimpleGameAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Volumes/DATA/XCode_Project/SimpleGame/SimpleGameAppDelegate.m326278279#326278280#0(0"0(0#0#62"/Volumes/DATA/XCode_Project/SimpleGame/SimpleGameAppDelegate.m8671268448#1544"    cd /Volumes/DATA/XCode_Project/SimpleGame    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-generated-files.hmap -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-own-target-headers.hmap -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-all-target-headers.hmap -iquote /Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-project-headers.hmap -F/Volumes/DATA/XCode_Project/SimpleGame/build/Debug -I/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/include -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/DerivedSources/x86_64 -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/DerivedSources -include /var/folders/kK/kKKtxllFGeWAhTTifEDBo++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleGame_Prefix-drnmspretdlpqheqpyivrtywqyxy/SimpleGame_Prefix.pch -c /Volumes/DATA/XCode_Project/SimpleGame/SimpleGameAppDelegate.m -o /Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/SimpleGameAppDelegate.o0#
+
+CCompileC build/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/main.o /Volumes/DATA/XCode_Project/SimpleGame/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s326278279.862954
+e326278280.671336
+r1
+xCompileC
+xbuild/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/main.o
+x/Volumes/DATA/XCode_Project/SimpleGame/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@53"Compile /Volumes/DATA/XCode_Project/SimpleGame/main.m326278279#326278280#0(0"0(0#0#45"/Volumes/DATA/XCode_Project/SimpleGame/main.m8622642336#1510"    cd /Volumes/DATA/XCode_Project/SimpleGame    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-generated-files.hmap -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-own-target-headers.hmap -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-all-target-headers.hmap -iquote /Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-project-headers.hmap -F/Volumes/DATA/XCode_Project/SimpleGame/build/Debug -I/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/include -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/DerivedSources/x86_64 -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/DerivedSources -include /var/folders/kK/kKKtxllFGeWAhTTifEDBo++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleGame_Prefix-drnmspretdlpqheqpyivrtywqyxy/SimpleGame_Prefix.pch -c /Volumes/DATA/XCode_Project/SimpleGame/main.m -o /Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/main.o0#
+
+CCompileXIB /Volumes/DATA/XCode_Project/SimpleGame/English.lproj/MainMenu.xib
+s326278253.740827
+e326278254.260100
+r1
+xCompileXIB
+x/Volumes/DATA/XCode_Project/SimpleGame/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib326278253#326278254#0(0"0(0#0#65"/Volumes/DATA/XCode_Project/SimpleGame/English.lproj/MainMenu.xib8639522464#367"    cd /Volumes/DATA/XCode_Project/SimpleGame    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Resources/English.lproj/MainMenu.nib /Volumes/DATA/XCode_Project/SimpleGame/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCopyStringsFile /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s326278253.719221
+e326278254.841404
+r1
+xCopyStringsFile
+x/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings326278253#326278254#0(0"0(0#0#70"/Volumes/DATA/XCode_Project/SimpleGame/English.lproj/InfoPlist.strings8639727232#368"    cd /Volumes/DATA/XCode_Project/SimpleGame    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Resources/English.lproj0#
+
+CLd /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/MacOS/SimpleGame normal x86_64
+s326278280.742750
+e326278281.589123
+r1
+xLd
+x/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/MacOS/SimpleGame
+xnormal
+xx86_64
+lSLF07#2@96"Link /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/MacOS/SimpleGame326278280#326278281#0(0"0(0#0#0"8669930464#557"    cd /Volumes/DATA/XCode_Project/SimpleGame    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Volumes/DATA/XCode_Project/SimpleGame/build/Debug -F/Volumes/DATA/XCode_Project/SimpleGame/build/Debug -filelist /Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/Objects-normal/x86_64/SimpleGame.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/MacOS/SimpleGame0#
+
+CProcessInfoPlistFile /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Info.plist SimpleGame-Info.plist
+s326278253.664051
+e326278253.719068
+r1
+xProcessInfoPlistFile
+x/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Info.plist
+xSimpleGame-Info.plist
+lSLF07#2@29"Process SimpleGame-Info.plist326278253#326278253#0(0"0(0#0#60"/Volumes/DATA/XCode_Project/SimpleGame/SimpleGame-Info.plist8641623776#319"    cd /Volumes/DATA/XCode_Project/SimpleGame    builtin-infoPlistUtility SimpleGame-Info.plist -genpkginfo /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/kK/kKKtxllFGeWAhTTifEDBo++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleGame_Prefix-drnmspretdlpqheqpyivrtywqyxy/SimpleGame_Prefix.pch.gch SimpleGame_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s326278254.841530
+e326278279.862723
+r1
+xProcessPCH
+x/var/folders/kK/kKKtxllFGeWAhTTifEDBo++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleGame_Prefix-drnmspretdlpqheqpyivrtywqyxy/SimpleGame_Prefix.pch.gch
+xSimpleGame_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile SimpleGame_Prefix.pch326278254#326278279#0(0"0(0#0#60"/Volumes/DATA/XCode_Project/SimpleGame/SimpleGame_Prefix.pch8671543136#1413"    cd /Volumes/DATA/XCode_Project/SimpleGame    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-generated-files.hmap -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-own-target-headers.hmap -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-all-target-headers.hmap -iquote /Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/SimpleGame-project-headers.hmap -F/Volumes/DATA/XCode_Project/SimpleGame/build/Debug -I/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/include -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/DerivedSources/x86_64 -I/Volumes/DATA/XCode_Project/SimpleGame/build/SimpleGame.build/Debug/SimpleGame.build/DerivedSources -c /Volumes/DATA/XCode_Project/SimpleGame/SimpleGame_Prefix.pch -o /var/folders/kK/kKKtxllFGeWAhTTifEDBo++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleGame_Prefix-drnmspretdlpqheqpyivrtywqyxy/SimpleGame_Prefix.pch.gch0#
+
+CTouch /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app
+s326278281.589438
+e326278281.629201
+r1
+xTouch
+x/Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app
+lSLF07#2@71"Touch /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app326278281#326278281#0(0"0(0#0#0"8661790880#134"    cd /Volumes/DATA/XCode_Project/SimpleGame    /usr/bin/touch -c /Volumes/DATA/XCode_Project/SimpleGame/build/Debug/SimpleGame.app0#
+
