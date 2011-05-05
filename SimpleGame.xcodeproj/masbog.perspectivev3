@@ -315,7 +315,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>287C66DF137296540051ABEE</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SimpleGameAppDelegate.h</string>
+								<string>SimpleGameAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,17 +323,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>287C66E0137296540051ABEE</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SimpleGameAppDelegate.h</string>
+										<string>SimpleGameAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>287C67491372B9AD0051ABEE</string>
+										<string>287C67811372CD220051ABEE</string>
 										<key>history</key>
 										<array>
 											<string>287C67201372AD890051ABEE</string>
 											<string>287C67211372AD890051ABEE</string>
-											<string>287C67221372AD890051ABEE</string>
-											<string>287C67231372AD890051ABEE</string>
+											<string>287C676F1372C6840051ABEE</string>
+											<string>287C67801372CD1F0051ABEE</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -650,6 +650,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>287C67821372CD220051ABEE</string>
 		<string>287C67011372A8B70051ABEE</string>
 		<string>287C67021372A8B70051ABEE</string>
 		<string>/Volumes/DATA/XCode_Project/SimpleGame/SimpleGame.xcodeproj</string>
