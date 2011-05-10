@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* SimpleGameAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* SimpleGameAppDelegate.m */; };
+		2812D7581377ADA70010D384 /* p1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812D7571377ADA70010D384 /* p1Controller.m */; };
+		2812D7631377ADD60010D384 /* p2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812D7621377ADD60010D384 /* p2Controller.m */; };
 		287C679D1372CDC30051ABEE /* Armor.m in Sources */ = {isa = PBXBuildFile; fileRef = 287C67941372CDC30051ABEE /* Armor.m */; };
 		287C679E1372CDC30051ABEE /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 287C67961372CDC30051ABEE /* Entity.m */; };
 		287C679F1372CDC30051ABEE /* Equipment.m in Sources */ = {isa = PBXBuildFile; fileRef = 287C67981372CDC30051ABEE /* Equipment.m */; };
@@ -27,6 +29,10 @@
 		256AC3D80F4B6AC300CF3369 /* SimpleGameAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleGameAppDelegate.h; sourceTree = "<group>"; };
 		256AC3D90F4B6AC300CF3369 /* SimpleGameAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleGameAppDelegate.m; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* SimpleGame_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleGame_Prefix.pch; sourceTree = "<group>"; };
+		2812D7561377ADA70010D384 /* p1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = p1Controller.h; sourceTree = "<group>"; };
+		2812D7571377ADA70010D384 /* p1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = p1Controller.m; sourceTree = "<group>"; };
+		2812D7611377ADD60010D384 /* p2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = p2Controller.h; sourceTree = "<group>"; };
+		2812D7621377ADD60010D384 /* p2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = p2Controller.m; sourceTree = "<group>"; };
 		287C67931372CDC30051ABEE /* Armor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Armor.h; sourceTree = "<group>"; };
 		287C67941372CDC30051ABEE /* Armor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Armor.m; sourceTree = "<group>"; };
 		287C67951372CDC30051ABEE /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
@@ -61,6 +67,10 @@
 			children = (
 				256AC3D80F4B6AC300CF3369 /* SimpleGameAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* SimpleGameAppDelegate.m */,
+				2812D7561377ADA70010D384 /* p1Controller.h */,
+				2812D7571377ADA70010D384 /* p1Controller.m */,
+				2812D7611377ADD60010D384 /* p2Controller.h */,
+				2812D7621377ADD60010D384 /* p2Controller.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -218,6 +228,8 @@
 				287C679F1372CDC30051ABEE /* Equipment.m in Sources */,
 				287C67A01372CDC30051ABEE /* Player.m in Sources */,
 				287C67A11372CDC30051ABEE /* Weapon.m in Sources */,
+				2812D7581377ADA70010D384 /* p1Controller.m in Sources */,
+				2812D7631377ADD60010D384 /* p2Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

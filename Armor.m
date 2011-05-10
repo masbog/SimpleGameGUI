@@ -68,8 +68,6 @@
 	return agi;
 }
 
-
-
 -(id)initWithID:(NSString *)theID 
 			 name:(NSString *)theName 
 			 type:(NSString *)theType 
