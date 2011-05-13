@@ -10,8 +10,12 @@
 #import "Equipment.h"
 #import "Armor.h"
 #import "Weapon.h"
+#import "SimpleGameAppDelegate.h"
 
 @implementation Player
+@synthesize logs;
+
+SimpleGameAppDelegate *setLogging; //= [[SimpleGameAppDelegate alloc] init];
 
 -(void) setName:(NSString *)theName 
 {
@@ -49,7 +53,6 @@
 {
 	return name;
 }
-
 
 -(NSString *) serang
 {
@@ -109,7 +112,7 @@
 	agiPenyerang = [self agib];
 	agiDiserang = [other agib];
 	if ([self isDeath]) {
-		NSLog(@"%@ mati", [self name]);
+		logs = [NSString stringWithFormat:@"%@ mati", [self name]];
 		return;
 	}
 	if (![other isDeath] && [self isMissing]) {
@@ -131,16 +134,17 @@
 			default:
 				break;
 		}
-		NSLog(@"penyerang : %@, yang diserang : %@ ", [self name], [other name]);
-		int oldHealth = [other health];
+		logs = [NSString stringWithFormat:@"penyerang : %@, yang diserang : %@ ", [self name], [other name]];
+		int oldHealth;
+		oldHealth = [other health];
 		int totalDmg = (attA - defB) * 0.01 * [weapon dmg];
 		if (attA <= defB) {
 			[other setHealth:[other health] - 0];
 		}else {
 			[other setHealth:[other health] - totalDmg];
 		}
-		NSLog(@"%@ diserang %@ pada bagian %@-nya, maka nyawa %@ tadinya %d tinggal %d karena Total damage serangan dari %@ : %d",
-			  [other name], [self name], sasaran, [other name], oldHealth, [other health], [self name], totalDmg);
+		//logs = [NSString stringWithFormat:@"%@ diserang %@ pada bagian %@-nya", [other name], [self name], sasaran];
+		logs = [NSString stringWithFormat:@"%@ diserang %@ pada bagian %@-nya, maka HP %@ tadi %d sekarang %d karena Total damage serangan %@ : %d", [other name], [self name], sasaran, [other name], oldHealth, [other health], [self name], totalDmg];
 	}
 }
 
@@ -165,6 +169,7 @@
 			case ArmorHead:
 				[headArmor release];
 				headArmor = [theIsiArmor retain];
+				
 				break;
 			case ArmorBody:
 				[bodyArmor release];
@@ -195,7 +200,6 @@
 {
 	return isiArmor;
 }
-
 -(void) dealloc
 {
 	[weapon release];
