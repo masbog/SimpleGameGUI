@@ -10,7 +10,7 @@
 #import "armorTreeController.h"
 
 @implementation SimpleGameAppDelegate
-@synthesize window, stringType, textLog, isiLog;
+@synthesize window, stringType, isiLog, logging, tempArray, key, root;
 
 @synthesize apparelArmor, apparelArmorStat, apparelArmorHeadValue, apparelArmorBodyValue, apparelArmorFootValue; 
 
@@ -18,6 +18,7 @@
 @synthesize p2Name, p2Attack, p2Stat, p2ArrayController, p2WeaponStatController, p2WeaponStat, p2ArmorStatController, p2ArmorStat;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+	tempArray = [[NSMutableArray alloc] init];
 	isiLog = [[NSMutableArray alloc] init];
 	apparelArmor = [[NSArray alloc] initWithObjects:@"Head Armor", @"Body Armor", @"Foot Armor",nil];
 	apparelArmorStat = [[NSArray alloc] initWithObjects:@"Name", @"Type", @"Apparel", @"ATK", @"DEF", @"AGI",nil];
@@ -128,7 +129,7 @@
 {
 	int i,j;
 	armorTreeController *aTC = [armorTreeController armorTreeControllerFromName:@"Root" value:@"of the tree"];
-	NSMutableArray *roots = [NSMutableArray array];
+	roots = [NSMutableArray array];
 	for(i=0;i<3;i++)
 	{
 		aTC = [armorTreeController armorTreeControllerFromName:[apparelArmor objectAtIndex:i] value:@""];
@@ -149,14 +150,15 @@
 	}
 	if ([pemilik ID] == @"P1") {
 		[p1ArmorStatController setContent:roots];
+		//NSLog(@"isi p1 tree controller %@", [roots objectAtIndex:1]);
 		[p1ArmorStat reloadData];
 	}else if ([pemilik ID] == @"P2") {
 		[p2ArmorStatController setContent:roots];
 		[p2ArmorStat reloadData];
-	}
+	}/*
 	[apparelArmorHeadValue release];
 	[apparelArmorBodyValue release];
-	[apparelArmorFootValue release];
+	[apparelArmorFootValue release];*/
 }
 
 -(void)setHeadArrayValue:(Armor *)headValue
@@ -190,15 +192,23 @@
 	[apparelArmorFootValue addObject:[NSString stringWithFormat:@"%d%",[footValue agi]]];
 }
 
-
+-(void)setContent:(NSArrayController *)content key:(NSString *)theKey
+{
+	[tempArray addObject:[NSDictionary dictionaryWithObjectsAndKeys:content, theKey, nil]];
+}
+-(void)setTreeContent:(NSTreeController *)content key:(NSString *)theKey
+{
+	[tempArray addObject:[NSDictionary dictionaryWithObjectsAndKeys:content, theKey, nil]];
+}
 -(IBAction)p1Serang:(id)sender
 {
 	if (![p1 isDeath] && ![p2 isDeath])
 	{
 		[p1 attack:p2];
+		[self setLog:[p1 logs1]];
 		[self setLog:[p1 logs]];
 	}else {
-		[self melepas];
+		[self melepas:[p1 name]];
 	}
 }
 
@@ -207,16 +217,17 @@
 	if (![p1 isDeath] && ![p2 isDeath])
 	{
 		[p2 attack:p1];
+		[self setLog:[p2 logs1]];
 		[self setLog:[p2 logs]];
 	}else {
-		[self melepas];
+		[self melepas:[p1 name]];
 	}
 }	
 
--(void)melepas
+-(void)melepas:(NSString *)pemenang
 {
-	NSLog(@" P2 : %@ menang", [p2 name]);
-	NSLog(@"Peperangan Berakhir");
+	NSString *tempLog = [NSString stringWithFormat:@" Player : %@ menang\nPeperangan Berakhir", pemenang];
+	[isiLog addObject:tempLog];
 	[p1 release];
 	[p1Weapon release];
 	[p1HeadArmor release];
@@ -229,8 +240,67 @@
 -(void)setLog:(NSString *)logs
 {
 	[isiLog addObject:logs];
-	[textLog setStringValue:[isiLog description]];
+	[logging setString:[isiLog description]];
+	[logging scrollToEndOfDocument:self];
 }
+
+-(IBAction)save:(id)sender
+{
+	tempArray = [[NSMutableArray alloc] initWithCapacity:0];
+	
+	//NSLog(@"isi p1array \n%@", [p1ArrayController content]);
+	NSSavePanel *savePanel = [NSSavePanel savePanel];
+	int opsi = [savePanel runModal];
+	
+	if (opsi == NSOKButton) {
+		[self setContent:[p1ArrayController content] key:@"p1stat"];
+		[self setContent:[p2ArrayController content] key:@"p2stat"];
+		[self setContent:[p1WeaponStatController content] key:@"p1weapon"];
+		[self setContent:[p2WeaponStatController content] key:@"p2weapon"];	
+		//[self setContent:[p1ArmorStatController content] key:@"p1armor"];
+		//[self setContent:[p2ArmorStatController content] key:@"p2armor"];	
+		NSLog(@"isinya tempArray :%@", tempArray);
+		[NSKeyedArchiver archiveRootObject:tempArray toFile:[savePanel filename]];
+	}
+	return;
+}
+-(IBAction)open:(id)sender
+{
+	tempArray = nil;
+	NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+	int opsi = [openPanel runModal];
+	if (opsi == NSOKButton) {
+		tempArray = [NSKeyedUnarchiver unarchiveObjectWithFile:[openPanel filename]];
+		//NSLog(@"%@", [[tempArray valueForKey:@"p2"] objectAtIndex:1]);
+		[p1ArrayController setContent:[[tempArray valueForKey:@"p1stat"] objectAtIndex:0]];
+		[p2ArrayController setContent:[[tempArray valueForKey:@"p2stat"] objectAtIndex:1]];
+		[p1WeaponStatController setContent:[[tempArray valueForKey:@"p1weapon"] objectAtIndex:2]];
+		[p2WeaponStatController setContent:[[tempArray valueForKey:@"p2weapon"] objectAtIndex:3]];
+		
+		//[roots addObject:[[tempArray valueForKey:@"p1armor"] objectAtIndex:4]];
+		//[p1ArmorStatController setContent:[[tempArray valueForKey:@"p1armor"] objectAtIndex:4]];
+		//[roots addObject:[[tempArray valueForKey:@"p2armor"] objectAtIndex:5]];
+		//[p1ArmorStatController setContent:[[tempArray valueForKey:@"p2armor"] objectAtIndex:5]];
+		//NSLog(@"isinya conten baru \n%@", [[tempArray valueForKey:@"p2stat"] objectAtIndex:3]);
+	}
+	return;
+}
+
+-(IBAction)push:(id)sender
+{
+	NSLog(@"isi per armor : %@", [p1ArmorStat dataSource]);
+	/*[self setTreeContent:[p1ArmorStatController content] key:@"p1armor"];
+	NSLog(@"%@", [tempArray valueForKey:@"p1armor"]);
+	NSMutableArray *temporari = [[NSMutableArray alloc] initWithCapacity:0];
+	//temporari = [tempArray valueForKey:@"p1armor"];
+	[temporari addObjectsFromArray:[tempArray valueForKey:@"p1armor"]];
+	NSLog(@"isi temporari = %@", temporari);
+	NSLog(@"%@", [p2ArmorStatController content]);
+	[p2ArmorStatController setContent:[temporari objectAtIndex:0]];
+	[p2ArmorStat reloadData];
+	[temporari release];*/
+}
+
 
 @end
 

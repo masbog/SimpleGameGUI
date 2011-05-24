@@ -13,9 +13,9 @@
 #import "SimpleGameAppDelegate.h"
 
 @implementation Player
-@synthesize logs;
+@synthesize logs, logs1, weaponImg;
 
-SimpleGameAppDelegate *setLogging; //= [[SimpleGameAppDelegate alloc] init];
+SimpleGameAppDelegate *setLogging;
 
 -(void) setName:(NSString *)theName 
 {
@@ -99,9 +99,9 @@ SimpleGameAppDelegate *setLogging; //= [[SimpleGameAppDelegate alloc] init];
 	agiPenyerang = (2 * agiPenyerang) * 0.1 * arc4random();
 	agiDiserang = agiDiserang * 0.1 * arc4random();
 	if (agiPenyerang <= agiDiserang) {
-		NSLog(@"waduh serangan %@ tidak mengenai karena agility %@ : %f dan agility diserang : %f", [self name], [self name], agiPenyerang, agiDiserang);
+		logs1 = [NSString stringWithFormat:@"waduh serangan %@ tidak mengenai karena agility %@ : %f dan agility diserang : %f", [self name], [self name], agiPenyerang, agiDiserang];
 	}else {
-		NSLog(@"serangan %@ tepat sasaran!", [self name]);
+		logs1 = [NSString stringWithFormat:@"serangan %@ tepat sasaran!", [self name]];
 	}
 	return ( agiPenyerang > agiDiserang ? YES : NO );}
 
@@ -121,20 +121,19 @@ SimpleGameAppDelegate *setLogging; //= [[SimpleGameAppDelegate alloc] init];
 		switch (rnd) {
 			case 1:
 				defB = [[other headArmor] def];
-				sasaran = @"Kepala";
+				sasaran = [NSString stringWithFormat:@"Kepala"];
 				break;
 			case 2:
 				defB = [[other bodyArmor] def];
-				sasaran = @"Badan";
+				sasaran = [NSString stringWithFormat:@"Badan"];
 				break;
 			case 3:
 				defB = [[other footArmor] def];
-				sasaran = @"Kaki";
+				sasaran = [NSString stringWithFormat:@"Kaki"];
 				break;
 			default:
 				break;
 		}
-		logs = [NSString stringWithFormat:@"penyerang : %@, yang diserang : %@ ", [self name], [other name]];
 		int oldHealth;
 		oldHealth = [other health];
 		int totalDmg = (attA - defB) * 0.01 * [weapon dmg];
@@ -143,8 +142,8 @@ SimpleGameAppDelegate *setLogging; //= [[SimpleGameAppDelegate alloc] init];
 		}else {
 			[other setHealth:[other health] - totalDmg];
 		}
-		//logs = [NSString stringWithFormat:@"%@ diserang %@ pada bagian %@-nya", [other name], [self name], sasaran];
 		logs = [NSString stringWithFormat:@"%@ diserang %@ pada bagian %@-nya, maka HP %@ tadi %d sekarang %d karena Total damage serangan %@ : %d", [other name], [self name], sasaran, [other name], oldHealth, [other health], [self name], totalDmg];
+		[sasaran release];
 	}
 }
 

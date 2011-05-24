@@ -17,7 +17,10 @@ typedef enum _CharacterType {
 } CharacterType;
 
 @interface Player : Entity {
+	NSImageView *weaponImg;
+	
 	NSString *logs;
+	NSString *logs1;
 	
 	NSString *name;
 	NSString *serang;
@@ -32,7 +35,10 @@ typedef enum _CharacterType {
 	float agiPenyerang, agiDiserang;
 	Armor *isiArmor;
 }
+@property(nonatomic, retain) IBOutlet NSImageView *weaponImg;
+
 @property(nonatomic, retain)NSString *logs;
+@property(nonatomic, retain)NSString *logs1;
 
 -(void) setName:(NSString *) theName;
 -(void) setHealth:(int) theHealth;

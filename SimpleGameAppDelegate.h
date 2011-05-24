@@ -24,9 +24,9 @@
 	Armor *p2HeadArmor, *p2BodyArmor, *p2FootArmor;
 	
     NSWindow *window;
-	NSTextField *textLog;
 	NSMutableArray *isiLog;
 	NSString *stringType;
+	NSTextView *logging;
 	
 	NSTextField *p1Name;
 	NSTableView *p1Stat;
@@ -52,11 +52,17 @@
 	NSMutableArray *apparelArmorBodyValue;
 	NSMutableArray *apparelArmorFootValue;
 	
+	NSMutableArray *tempArray;
+	NSString *key;
+	NSMutableArray *roots;
 }
+@property (nonatomic, retain) NSString *key;
+@property (nonatomic, retain) NSMutableArray *tempArray;
+@property (nonatomic, retain) NSMutableArray *root;
 
 @property (assign) IBOutlet NSWindow *window;
-@property (nonatomic,retain) IBOutlet NSTextField *textLog;
 @property (nonatomic,retain) NSMutableArray *isiLog;
+@property (nonatomic,retain) IBOutlet NSTextView *logging;
 
 @property (nonatomic,retain) NSArray *apparelArmor;
 @property (nonatomic,retain) NSArray *apparelArmorStat;
@@ -84,6 +90,8 @@
 
 @property (nonatomic, retain) NSString *stringType;
 
+-(void)setContent:(NSArrayController *)content key:(NSString *)theKey;
+-(void)setTreeContent:(NSTreeController *)content key:(NSString *)theKey;
 
 -(void)characterTypeString:(int)cNumber;
 -(void)p1StatTableViewAddData;
@@ -101,8 +109,13 @@
 -(IBAction)p1Serang:(id)sender;
 -(IBAction)p2Serang:(id)sender;
 
--(void)melepas;
+-(void)melepas:(NSString *)pemenang;
 
 -(void)setLog:(NSString *)logger;
+
+-(IBAction)save:(id)sender;
+-(IBAction)open:(id)sender;
+
+-(IBAction)push:(id)sender;
 
 @end
