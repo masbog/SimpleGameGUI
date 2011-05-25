@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Debug</string>
+	<string>Project</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -298,6 +298,8 @@
 							<string>MainColumn</string>
 							<real>299</real>
 						</array>
+						<key>RubberWindowFrame</key>
+						<string>4 55 1276 723 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -308,6 +310,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -325,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>28F1A218138BBA9F00919CC2</string>
+										<string>28F1A2A3138BD5D700919CC2</string>
 										<key>history</key>
 										<array>
 											<string>287C67201372AD890051ABEE</string>
@@ -337,14 +341,14 @@
 											<string>28F7BF22138AF4AD00BF6DC3</string>
 											<string>28F7BF23138AF4AD00BF6DC3</string>
 											<string>28F19F59138B761800919CC2</string>
-											<string>28F19F5D138B83B100919CC2</string>
-											<string>28F19FA1138B986100919CC2</string>
 											<string>28F19FA2138B986100919CC2</string>
 											<string>28F19FAA138B9B9600919CC2</string>
 											<string>28F19FAB138B9B9600919CC2</string>
 											<string>28F19FAC138B9B9600919CC2</string>
 											<string>28F19FAD138B9B9600919CC2</string>
-											<string>28F19FAE138B9B9600919CC2</string>
+											<string>28F1A298138BC76600919CC2</string>
+											<string>28F1A299138BC76600919CC2</string>
+											<string>28F1A2A0138BCD2D00919CC2</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -358,16 +362,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {955, 602}}</string>
+								<string>{{0, 0}, {955, 556}}</string>
+								<key>RubberWindowFrame</key>
+								<string>4 55 1276 723 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>602pt</string>
+							<string>556pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>75pt</string>
+							<string>121pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -381,7 +387,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1114, 48}}</string>
+										<string>{{10, 27}, {955, 94}}</string>
+										<key>RubberWindowFrame</key>
+										<string>4 55 1276 723 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -397,7 +405,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 31}, {603, 297}}</string>
+										<string>{{10, 27}, {955, 94}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
@@ -519,8 +527,6 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {1276, 143}}</string>
-						<key>RubberWindowFrame</key>
-						<string>4 55 1276 723 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -595,11 +601,7 @@
 							</array>
 							<key>Frame</key>
 							<string>{{623, 0}, {653, 272}}</string>
-							<key>RubberWindowFrame</key>
-							<string>4 55 1276 723 0 0 1280 778 </string>
 						</dict>
-						<key>RubberWindowFrame</key>
-						<string>4 55 1276 723 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -663,7 +665,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>28F1A219138BBA9F00919CC2</string>
 		<string>28F19E6E138B60FD00919CC2</string>
 		<string>28F19E6F138B60FD00919CC2</string>
 		<string>/Volumes/DATA/XCode_Project/SimpleGame/SimpleGame.xcodeproj</string>

@@ -288,7 +288,8 @@
 
 -(IBAction)push:(id)sender
 {
-	NSLog(@"isi per armor : %@", [p1ArmorStat dataSource]);
+	NSLog(@"isi per armor : %@", [p1ArmorStatController ]);
+	
 	/*[self setTreeContent:[p1ArmorStatController content] key:@"p1armor"];
 	NSLog(@"%@", [tempArray valueForKey:@"p1armor"]);
 	NSMutableArray *temporari = [[NSMutableArray alloc] initWithCapacity:0];
